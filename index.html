@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tswelopele Training Group</title>
+    <script src="/popup.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#landing" class="header__logo">Tswelopele Training <br> Group</a>
+            <!-- <h1 class="header__logo">Tswelopele Training<br>Group</h1> -->
+        </div>
+        <nav class="nav" id="nav-menu">
+            <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#landing" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Courses</a></li>
+                <li class="nav__item"><a href="#meet-team" class="nav__link">Meet the Team</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+        <ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
+    </header>
+     <!-- landing section? -->
+<section id="landing"> 
+    <div class="landing container">
+        <div class="background-box">
+            <h1>Welcome,<span></span></h1>
+            <h1>to <span>the</span></h1>
+            <h1>Tswelopele Training <br><span>Group</span></h1>
+            <a href="#services" type="button" class="cta">View Courses</a>
+        </div>
+    </div>
+</section>
+<!-- end landing section  -->
+<!-- meet the team  -->
+<section id="about">
+    <div class="about container">
+        <div class="col-left">
+            <div class="about-img">
+                <img src="/img/g.png" class="about__img" alt="img">
+            </div>
+        </div>
+        <div class="col-right">
+            <h1 class="section-title">About <span>Us</span></h1>
+            <h2>Tshwelople Training Group</h2>
+            <p>Our Mission Statement and Quality Policy articulate our commitment to our learners. Learner expectations must be determined, 
+                understood, converted into requirements and must have processes designed to exceed them in order to fulfill this Mission and 
+                Quality Policy, on an everyday basis. Staying close to our learners is our primary method of determining and understanding 
+                their requirements and expectations, and we accomplish this objective through a multitude of channels. These communications 
+                and interactions yield clear, explicit requirements and expectations. 
+                Our QMS ensures that these requirements are fulfilled with the aim of exceeding learner expectations.</p>
+                <div class="btn_container">
+                    <button type="button" onclick="openLightbox();toSlide(7)" id="class_btn" class="cta">Learn More</button>
+                </div>
+            </div>                   
+        </div>
+</section>
+<!-- end meet the team  -->
+<!-- service section  -->
+<section id="services">
+    <section class="classesH">
+        <h1 class="section-title">Courses</h1>
+        <div class="classes">
+                <div class="c_row">
+                    <div class="c_img">
+                        <img src="/img/AssessorsC.jpg" class="c_cover" alt="Assessors Course Cover Image"/>
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" id="class_btn" onclick="openLightbox();toSlide(1)">Assessors Course</button>
+                    </div>
+                </div>
+                <div class="c_row">
+                    <div class="c_img">
+                        <img src="/img/Design&D.jpg" class="c_cover" alt="Design and Development Cover Image"/>
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" onclick="openLightbox();toSlide(2)" id="class_btn">Design and Develop <br>Assessments Course</button>
+                    </div>
+                </div>
+                <div class="c_row">
+                    <div class="c_img">
+                        <img src="/img/FacilitatorsC.jpg" class="c_cover" alt="Facilitators Course Cover Image"/>
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" onclick="openLightbox();toSlide(3)" id="class_btn">Facilitators Course</button>
+                    </div>
+                </div>
+                <div class="c_row">
+                    <div class="c_img">
+                        <img src="/img/ModeratorsC.jpg" class="c_cover" alt="Moderators Course Cover Image"/>
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" onclick="openLightbox();toSlide(4)" id="class_btn">Moderators Course</button>
+                    </div>
+                </div>
+                <div class="c_row">
+                    <div class="c_img">
+                        <img src="/img/ODETDPC.jpg" class="c_cover" alt="ODETDP Course Cover Image"/>
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" onclick="openLightbox();toSlide(5)" id="class_btn">National Certificate<br>ODETDP Course</button>
+                    </div>
+                </div>
+                <div class="c_row">
+                    <div class="c_img">
+                        <img src="/img/Combo.jpg" class="c_cover" alt="Combo Course Cover Image"/>
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" onclick="openLightbox();toSlide(6)" id="class_btn">Combo Course</button>
+                    </div>
+                </div>
+        </div>
+        <script></script> 
+    </section>
+    <div id="Lightbox" class="modal">
+        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+        <div class="modal-content">
+            <div class="c_slide">
+                <img src="/img/AssessorsCourse.png" class="class_img" alt="Assessors Course"/>
+            </div>
+            <div class="c_slide">
+                <img src="/img/Design&Develop.png" class="class_img" alt="Design and Development Course"/>
+            </div>
+            <div class="c_slide">
+                <img src="/img/FacilitatorsCourse.png" class="class_img" alt="Facilitators Course"/>
+            </div>
+            <div class="c_slide">
+                <img src="/img/ModeratorsCourse.png" class="class_img" alt="Moderators Course"/>
+            </div>p
+            <div class="c_slide">
+                <img src="/img/ODETDPCourse.png" class="class_img" alt="ODETDP Course"/>
+            </div>
+            <div class="c_slide">
+                <img src="/img/ComboCourse.png" class="class_img" alt="Combo Course"/>
+            </div>
+            <div class="c_slide">
+                <div class="about_us">
+                    <div class="txt_container">
+                        <h2>We are the Tswelopele Training Group</h2>
+                        <h3>Our Goals and Vision</h3>
+                        <p>
+                            To assist our learners, achieve their utmost potential in quality education, training and development.  Work hand in hand with out learners and clients to better their trust and loyalty.
+                            <br>Maintain beneficial partnership and ensure our needs and expectations for training products and services.  Keep an excellent and participatory work ethics, rely on the excellence of our stuff and provide a training environment in which they can excel.
+                        </p>
+                        <div class="Tgrid">
+                            <div class="Tgrid_column">
+                                <div class="grid_row">
+                                    <h3>Our Mission</h3>
+                                    <p>
+                                        We intend to meet and deliver on our learner expectations by constantly improving and updating our skills and resources for Education, Training and Development.
+                                    </p>
+                                    <h3>Our Values</h3>
+                                    <p>
+                                        <ul>
+                                            <li>Integrity</li>
+                                            <li>Professionalism</li>
+                                            <li>Human dignity</li>
+                                            <li>Excellent service</li>
+                                            <li>Exceptional learner experience</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Tgrid_column">
+                                <div class="grid_row">
+                                    <img class="Tgrid_img" src="/img/g.png">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Our Commitment is to our learners</h3>
+                        <p>
+                            Our Mission Statement and Quality Policy articulate our commitment to our learners. Learner expectations must be determined, understood, converted into requirements and must have processes designed to exceed them in order to fulfil this Mission and Quality Policy, on an everyday basis. Staying close to our learners is our primary method of determining and understanding their requirements and expectations, and we accomplish this objective through a multitude of channels. These communications and interactions yield clear, explicit requirements and expectations. Our QMS ensures that these requirements are fulfilled with the aim of exceeding learner expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="c_slide">
+                <div class="about_us">
+                    <div class="txt_container">
+                        <div class="Tgrid">
+                            <div class="Tgrid_column">
+                                <div class="grid_row">
+                                    <h3>Lepi Hoho</h3>
+                                    <h3>Managing Director</h3>
+                                    <p>Mr. Lepi Hoho, is the Founder of Tswelopele Training Group Graduated with a N Diploma in Electrical/electronics in Engineering 
+                                        at Ekurhuleni Technical College. He ventured in a career in Aviation with the South African Air force in 2008.  Within the Aviation
+                                        industry that is where the passion for training and development started.  He started training newly qualified technical members and as the
+                                        need arose for training, he enrolled for Training and Development courses where he obtained Facilitators, Assessors and Moderators of which he is registerd on 
+                                        ETDP.
+                                        <br>
+                                        He has conducted training successfully in the past 4 years in the Aviation industry (Air force) and is 
+                                        still training technical personnel in the same aviation field till today, he has a passion for training.
+                                        <br> 
+                                        In 2020 Tswelopele Training Group was born with the need for training in Engineering, End User Computing,
+                                        Graphic Designing, Aviation, Health and Safety and all ETDP Training Courses.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Tgrid_column">
+                                <div class="grid_row">
+                                    <h3>Education</h3>
+                                    <ul>
+                                        <li>National N Diploma in Electronics/Electrical Engineering</li>
+                                        <li>Introduction to Samtrac</li>
+                                        <li>Full Samtrac (Safety Health and Environment</li>
+                                        <li>Qualified Helicopter Technician (Avionics)</li>
+                                        <li>Facilitator (117871)</li>
+                                        <li>Registered Assessor (115753)</li>
+                                        <li>Registered Moderator (115759)</li>
+                                    </ul>
+                                    <h3>Technical Training</h3>
+                                    <ul>
+                                        <li>Direct Current</li>
+                                        <li>Semi-Conductors</li>
+                                        <li>Power Supplies</li>
+                                        <li>Micro Processor</li>
+                                        <li>Alternating Current</li>
+                                        <li>Op-Amps</li>
+                                        <li>Digitals</li>
+                                        <li>Test Equipment</li>
+                                        <li>Hand Skills</li>
+                                        <li>Safety</li>
+                                        <li>Soldering</li>
+                                        <li>Electronics 1 Modules A</li>
+                                        <li>Electronics 1 Modules B</li>
+                                        <li>Electronics 1 Modules C</li>
+                                    </ul>
+                                    <h3>Technical Aviation Experience</h3>
+                                    <p>Position:  Aircraft Instruments Technician 
+                                        <br>
+                                        Experience: 10 years' Experience in aviation, 4 years Experience in Training
+                                        <br>
+                                        Qualifications: Qualified Aircraft Instruments
+                                        <br> 
+                                        Company: SA Air Force
+                                        <br>
+                                        Aircraft Type: Oryx Helicopter (Air Force), Agusta A109 (Air Force), Rooivalk Helicopter (Air Force)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><hr><br>
+                        <div class="Tgrid">
+                            <div class="Tgrid_column">
+                                <div class="grid_row">
+                                    <h3>Monyaki Itumeleng Cliffort</h3>
+                                    <h3>Manager</h3>
+                                    <p>Mr. Monyaki Cliffort Itumeleng a member of Tswelopele Training Group started his ETD Career in 
+                                        2018 as a Facilitator.  He is a Registered Assessor and Moderator, and he holds a National Certificate
+                                        in Occupationally Directed Education Training Development Practices and Leadership Development
+                                        from Goldfields Tvet College.  He also attended Military Training conducted by the Department of Defense in 2016, 
+                                        National Rural Youth services Corps (NARYSEC) conducted by the Department of Rural development and land reform in 2017.  
+                                        He attended Entrepreneurship development program with NYDA in 2018.  He started facilitating and assessing under 
+                                        Goldfields Tvet College in 2019 and continued facilitation and assessing under Wilmon guidance
+                                        a Development institution and also under Mgwezane Training and Events Management CC 2019-2020.
+                                        <br>
+                                        In 2020 he joined an African youth owned Training Institution by the name Tswelopele Training Group 
+                                        with the need for training in all ETDP training programs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Tgrid_column">
+                                <div class="grid_row">
+                                    <h3>Education</h3>
+                                    <ul>
+                                        <li>Higher Education in OD-ETDP NQF Level 5</li>
+                                        <li>Facilitator (117871)</li>
+                                        <li>Assessor (115753)</li>
+                                        <li>Moderator (115759)</li>
+                                    </ul>
+                                    <h3>National Rural Youth Service Corps Orientation</h3>
+                                    <ul>
+                                        <li>Career Orientation</li>
+                                        <li>Labour Market Opportunities</li>
+                                        <li>Work Opportunities</li>
+                                        <li>Crime Prevention</li>
+                                        <li>Employment Readiness</li>
+                                    </ul>
+                                    <h3>Induction</h3>
+                                    <ul>
+                                        <li>Leadership in Communities</li>
+                                        <li>Volunteerism in Communities</li>
+                                        <li>DRDLR Department</li>
+                                    </ul>
+                                    <h3>Life Skills Program</h3>
+                                    <ul>
+                                        <li>Personal Development</li>
+                                        <li>Creative Problem Solving</li>
+                                        <li>Health and Wellness</li>
+                                        <li>Teamwork</li>
+                                        <li>Diversity</li>
+                                        <li>Peer to Peer Leadership Support</li>
+                                    </ul>
+                                    <br>
+                                    <br>
+                                    <p>Achievement of National Rural Youth Service Corps of the Department of Rural Development and 
+                                        Land Reform.  National Youth Service Program Presented by the Department of Defence at 3 SAI Battalion.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><hr><br>
+                        <div class="Tgrid">
+                            <div class="Tgrid_column">
+                                <div class="grid_row">
+                                    <h3>Moleboheng Rose Monyaki</h3>
+                                    <h3>Financial Manager</h3>
+                                    <p>
+                                        Monyaki Rose Moleboheng a member of Tswelopele Training Group is an agricultural manager and
+                                        extension officer with more than 7 years experience in community development and research department.
+                                        Originally from Botshabelo, she completed her Bachelors and Honors Degree in Agricultural Management at the 
+                                        University of the Free State.  Before the establishment of Tswelopele Training Group, she did learnership
+                                        and Internship course at 13A and AgriSETA from 2014-2018 under livestock and Management department. 
+                                        She commenced at agricultural academy as a research assistant from 2018-2020, she supervised all the 
+                                        content development and interpreting research specifications, and develop a work plan that satisfies requirements.
+                                        She covered admin, receptionist duties as well. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Tgrid_column">
+                                <div class="grid_row">
+                                    <p>She started facilitating and assessing under International
+                                        Agricultural Academy for Africa (I3A) in 2019 in partnership with AgriSETA till contract ended.  
+                                        In 2020, Tswelopele Training Group was born with need for training in all ETDP SETA Courses,
+                                        she is now appointed as a Financial Manager, Facilitator and Assessor (AgriSETA and more) at Tswelopele Training Group.</p>
+                                    <br><br>
+                                    <h3>Education</h3>
+                                    <ul>
+                                        <li>Skills Development Certificate - Educational Practitioner</li>
+                                        <li>National Diploma - Agricultural Extension Officer</li>
+                                        <li>Bachelor's Degree - Agricultural Management</li>
+                                        <li>Honours Degree - Agricultural Management</li>
+                                        <li>FAcademic Researcher</li>
+                                        <li>Leadership Skills - Chairperson Community Youth Club</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End service section  -->
+
+<!-- contact info -->
+<!-- End Contact Info -->
+
+<!-- meet the team  -->
+<section id="meet-team">
+    <div class="about container">
+        <div class="col-left">
+            <div class="about-img">
+                <img src="/img/LepiHoho.png" class="about__img" alt="img">
+            </div>
+        </div>
+        <div class="col-right">
+            <h1 class="Section-title">Meet the <span>Team</span></h1>
+            <h2>Tshwelople Training Group</h2>
+        <p>Mr. Lepi Hoho, Is the Founder of Tswelopele Training Group Graduated with a N Diploma in Electrical/electronics in 
+            Engineering at a Technical College Ekurhuleni Technical College. He ventured in a career in Aviation with the 
+            South African Air force in 2008. Within the Aviation industry that is where the passion for training and development started. 
+            He started training newly qualified technical members and as the need arose for training, He enrolled for Training and Development 
+            courses where He obtained Facilitators, Assessors and Moderators of which he is registered on ETDP. He has conducted training 
+            successfully in the past 4 years in the Aviation industry (Air force) and is still training technical personnel in the same aviation 
+            field till today, he has a passion for training. In 2020 Tswelopele Training Group was born with the need for training in Engineering, 
+            End User Computing, Graphic Designing, Aviation, Health and Safety and all ETDP Training Courses</p>
+            <div class="btn_container">
+                <button type="button" onclick="openLightbox();toSlide(8)" id="class_btn" class="cta">Meet the rest</button>
+            </div>
+        </div>                   
+</div>
+</section>
+<!-- end meet the team  -->
+<!-- contact info  -->
+<section id="contact">
+    <div><h1 class="section-title">Contact <span>Info</span></h1></div>
+        <div class="contact container">
+            <div class="contact-item">
+                <div class="contact-info">
+                    <h1 class="contact-h1">&#9742 Phone</h1>
+                    <h2>081 461 3943 - Mr Lepi Hoho</h2><a href="tel:+27814613943"><img src="/img/whatsapp.svg" class="icon" alt="whatsapp logo"/></a>
+                    <h1>&#9998 Email</h1>
+                    <h2>lepza1983@gmail.com</h2>                 
+                    <h1>&#9983 Address</h1>
+                    <h2>14 Maselspoort Road, Midway, Bloemfontein, PO Box 100501, Renonsterspruit 9326</h2>
+                </div>   
+            </div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="574" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=14%20Maselspoort%20Road,%20Midway,%20Bloemfontein&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:574px;}</style><a href="https://www.embedgooglemap.net">use google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:574px;}</style></div></div>        </div>    
+        </div>
+</section>
+<!-- end contact info  -->
+
+<!-- Contact Form  -->
+<section id="overlay">
+    <Section id="forms">
+        <div class="form">
+            <h1>Do you have a <span>Question?</span></h1>
+            <h2>Please Send us an Email and we will get back to you</h2>
+            <form action="https://formsubmit.co/wingitweb@gmail.com" method="POST">
+                <div class="split_col">
+                    <input type="text" class="form-name" name="name" required placeholder="Name">
+                    <input type="email" class="form-mail" name="email" required placeholder="Email Address">
+                </div>
+                    <div class="form-message"> 
+                        <textarea style="width: 100%; height: 100px;" name="message" placeholder="Message" class="message"></textarea>
+                    </div>
+                <div class="btn_container">
+                    <button type="submit" class="form-btn">Send</button>
+                </div>       
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+            </form>
+        </div>
+    </Section>
+    <!-- End Contact Form  -->
+    
+    <!-- Footer Section -->
+    
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand"><h1>Tswe<span>lopele</span> Train<span>ing</span></h1></div>
+            <h2>For your <span>Training</span> needs </h2>
+        <div class="menu-footer">
+            <div class="links-footer">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                    <li><a href="#landing"><span>&#10148</span> Home</a></li>
+                    <li><a href="#about"><span>&#10148</span> About Us</a></li>
+                    <li><a href="#services"><span>&#10148</span> Courses</a></li>
+                    <li><a href="#meet-team"><span>&#10148</span> Meet the Team</a></li>
+                </ul>
+            </div>
+            <div class="contact-footer">
+                <h2>CONTACT DETAILS</h2>
+                <ul>
+                    <li><a href="#contact"><span>&#9983</span>14 Maselspoort Road, Midway, Bloemfontein</a></li>
+                    <li><span>&#9742</span>081 461 3943 - Mr Lepi Hoho</li>
+                    <li><span>&#9993</span>lepza1983@gmail.com</li>
+                </ul>
+            </div>
+            <div class="logo-footer">
+                <img src="img/g.png" alt="footer-logo">
+            </div>
+        </div>    
+            <p>Created by <span>Wingit Web</span></p>
+        </div>
+    </section>
+</section>
+<!-- End Footer Section -->
+<script type="text/javascript" src="navbar.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
